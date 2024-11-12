@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsfGVufDB8fDB8fHww);background-size: cover;">
+    <script src="script.js"></script>
+    <header>
+        <h1>Your Feedback Matters</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Feedback Form Section with Translucent Box -->
+        <section class="content-box feedback-box">
+            <h2>Share Your Experience</h2>
+            <p>We value your feedback. Please let us know about your stay and how we can improve.</p>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required><br><br>
+                    <option value="5">Excellent</option>
+                    <option value="4">Very Good</option>
+                    <option value="3">Good</option>
+                    <option value="2">Fair</option>
+                    <option value="1">Poor</option>
+                </select><br><br>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Book Your Stay</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body style="background-image: url(https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D);">
+    <script src="script.js"></script>
+    <header>
+        <h1>Book Your Stay</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Booking Form Section with Transparent Box -->
+        <section class="booking-box">
+            <h2 style="color: white;">Reserve Your Room</h2>
+            <form style="color: white;">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <label for="room">Room Type:</label>
+                <select id="room" name="room">
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="executive">Executive Suite</option>
+                    <option value="presidential">Presidential Suite</option>
+                </select>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
